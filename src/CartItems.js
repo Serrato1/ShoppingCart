@@ -1,9 +1,13 @@
 import React, {Component} from 'react'
-
-const CartItems = ()=>{
+import CartItem from './CartItem';
+const CartItems = ({itemsList})=>{
   return(
     <div className="container">
-      <h1>Items</h1>
+      {
+        itemsList.map((item)=>{
+          return <CartItem item={item}/>
+        })
+      }
     </div>
   )
 }
