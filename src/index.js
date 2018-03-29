@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import ShoppingCart from './App';
 // import 'bootstrap/dist/css/booststrap.min.css'
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<ShoppingCart />, document.getElementById('root'));

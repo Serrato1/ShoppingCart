@@ -7,7 +7,7 @@ import AddItem from './AddItem';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-class App extends Component {
+class ShoppingCart extends Component {
   state = {
     cartItemsList :
     [
@@ -59,4 +59,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default ShoppingCart;
