@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import CartHeader from './CartHeader';
 import CartFooter from './CartFooter'
 import CartItems from './CartItems';
-import CartItem from './CartItem';
 import AddItem from './AddItem';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,6 +22,15 @@ class App extends Component {
     console.log(product);
     this.setState(new_state);
   }
+  calculateTotal = () =>{
+    let cartItemsList = this.state.cartItemsList;
+    let total =  cartItemsList.reduce((acc, {id , product , quantity})=>{
+      console.log(id , product , quantity);
+      console.log(acc)
+      return acc + (product.priceInCents    * parseInt( quantity ) )
+    }, 0)
+    return "$" + total/100;
+  }
   render() {
     let copyrightYear = 2018;
     let products =  [
@@ -37,11 +44,13 @@ class App extends Component {
       { id: 47, name: 'Ergonomic Bronze Lamp', priceInCents: 40000 },
       { id: 48, name: 'Awesome Leather Shoes', priceInCents: 3990 },
     ];
+
     return (
       <div className="App">
         <CartHeader />
         <div className="container">
           <CartItems itemsList = {this.state.cartItemsList}/>
+          <div>Total: {this.calculateTotal()}</div>
           <AddItem   products = {products} addItem={(product)=>{this.add(product) }}/>
         </div>
         <CartFooter theYear={copyrightYear}/>
