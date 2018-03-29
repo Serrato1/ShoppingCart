@@ -1,0 +1,18 @@
+Job Search Criteria
+1.	Pay : 60,000 +
+2.	Culture : Competitive Atmosphere, Modern Work Environment, Activities for employees to engage in
+3.	Title: Software Developer( Jr/Mid Level), Web Developer ( Jr/Mid Level)
+4.	Benefits: Health Insurance, Vacation Time, 401k
+5.	Training: Does the job have a training program that educates incoming employees on the company, and best success strategies to be successful at the company
+6.	Skills required: Node, React, Php, Javascript, Mysql, Postgres, MongoDB , Networking
+7.	Scheduling/shift: Monday through Wednesday 40hr at the least.
+
+Resources for Job Search
+1.	Indeed : https://www.indeed.com
+2.	LinkedIn : https://www.linkedin.com
+3.	Glassdoor: https://www.glassdoor.com
+
+3 Companies That Fit Criteria
+1.	Google: https://careers.google.com/jobs
+2.	Facebook: https://www.facebook.com/careers/
+3.	Amazon: https://www.amazon.jobs
